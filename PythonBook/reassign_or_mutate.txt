@@ -1,0 +1,22 @@
+# obj starts with a value of 42
+
+obj = 'ABcd'
+  # reassignment so obj is now 'ABcd'
+obj.upper()
+  # Neither
+obj = obj.lower()
+  # strings are immutable so reassignment so obj is now 'abcd'
+print(len(obj))
+  # neither, outputs 4
+obj = list(obj)
+  # reassignment to ['a', 'b', 'c', 'd']
+obj.pop()
+  # mutation to a list without the last element
+obj[2] = 'X'
+  # mutation of the list and reassignment of the element at index 2
+obj.sort()
+  # mutates into a sorted list
+set(obj)
+  # neither
+obj = tuple(obj)
+  # reassignment into a tuple version of the set
